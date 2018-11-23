@@ -1,8 +1,10 @@
 version: '3'
 services:
-  node:
+  slave:
     network_mode: "host"
+    env_file: 
+      - "$secrets_dir/secret.env"
     image: geektr/ssmgr
     restart: always
     volumes:
-      - "$secrets_dir/ss.yml:/root/.ssmgr/default.yml:ro"
+      - "$service_dir/conf/ssmgr/config.js:/usr/local/share/.config/yarn/global/node_modules/shadowsocks-manager/services/config.js"
