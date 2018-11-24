@@ -4,7 +4,7 @@ const set = require('lodash/set')
 const config = {
   type: "s",
   shadowsocks: {
-    address: "127.0.0.4000",
+    address: "127.0.0.1:4000",
   },
   manager: {
     address: "0.0.0.0:4001",

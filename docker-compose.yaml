@@ -1,6 +1,6 @@
 version: '3'
 services:
-  slave:
+  ssmgr:
     network_mode: "host"
     env_file: 
       - "$secrets_dir/secret.env"
