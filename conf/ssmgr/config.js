@@ -10,13 +10,7 @@ const config = {
     address: "0.0.0.0:4001",
     password: process.env.MANAGER_PASSWORD
   },
-  db: {
-    host: "db.deaf-mutes.us",
-    port: 3306,
-    user: "shadowsocks",
-    password: process.env.MYSQL_PASSWORD,
-    database: "shadowsocks"
-  }
+  db: "ss.sqlite"
 }
 
 exports.all = () => config
